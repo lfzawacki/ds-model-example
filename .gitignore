@@ -1,0 +1,6 @@
+build/
+*.elf
+*.nds
+*.ds
+*.arm9
+*.obj
