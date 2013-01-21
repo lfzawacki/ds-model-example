@@ -130,11 +130,6 @@ static void lookAtModel(float *max, float *min)
 
     float newZ = fovy > fovx ? fovy : fovx;
 
-//    gluLookAt(mc[0],mc[1],max[2]+newZ,
-//              mc[0],mc[1],mc[2],
-//              0,1,0
-//                 );
-
     C.eye[0] = mc[0], C.eye[1] = mc[1], C.eye[2] = max[2]+newZ,
     C.center[0] = mc[0], C.center[1] = mc[1], C.center[2] = mc[2],
     C.up[0]= 0, C.up[1] = 1, C.up[2] = 0;
